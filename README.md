@@ -9,4 +9,7 @@ In addition, I completed the following challenges:
 -Make the Change Filter button change its title to show the name of the currently selected filter.
 -Experiment with having more than one slider, to control each of the input keys you care about. For example, you might have one for radius and one for intensity.
 
-![ezgif-4-5bd09bc861f8](https://user-images.githubusercontent.com/42749527/104766160-13fc0280-5738-11eb-8f38-ab4e4592f484.gif)
+And the following (project 15) challenge: Go back to project 13 and make the image view fade in when a new picture is chosen. To make this work, set the alpha to 0 first.
+
+![ezgif-3-9f59ec85258a](https://user-images.githubusercontent.com/42749527/105783115-bcce0d00-5f43-11eb-8e41-aa8ea78cb691.gif)
+
