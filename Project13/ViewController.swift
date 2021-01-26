@@ -44,6 +44,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
         currentImage = image
         
+        self.imageView.alpha = 0
+        
         let beginImage = CIImage(image: currentImage)
         currentFilter.setValue(beginImage, forKey: kCIInputImageKey)
 
@@ -118,6 +120,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     func applyProcessing() {
+        UIView.animate(withDuration: 1, delay: 0.5, options: [],
+        animations: {
+            self.imageView.alpha = 1
+        })
+        
         let inputKeys = currentFilter.inputKeys
 
         if inputKeys.contains(kCIInputCenterKey) { currentFilter.setValue(CIVector(x: currentImage.size.width / 2, y: currentImage.size.height / 2), forKey: kCIInputCenterKey) }
